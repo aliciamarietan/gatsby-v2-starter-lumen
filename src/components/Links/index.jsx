@@ -17,7 +17,7 @@ class Links extends React.Component {
         <ul className="links__list">
           <li className="links__list-item">
             <a
-              href={`https://www.twitter.com/${links.email}`}
+              href={`mailto:${links.email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -26,7 +26,7 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a
-              href={`https://www.github.com/${links.twitter}`}
+              href={`https://www.twitter.com/${links.twitter}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -35,7 +35,7 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a
-              href={`https://www.vk.com/${links.linkedin}`}
+              href={`https://www.linkedin.com/in/${links.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,7 +44,7 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a
-              href={`https://www.vk.com/${links.instagram}`}
+              href={`https://www.instagram.com/${links.instagram}`}
               target="_blank"
               rel="noopener noreferrer"
             >

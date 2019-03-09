@@ -18,7 +18,7 @@ class WritingRoute extends React.Component {
       <Layout>
         <div>
           <Helmet>
-            <title>{title}</title>
+            <title>{`Writing - ${title}`}</title>
             <meta name="description" content={subtitle} />
           </Helmet>
           <Sidebar {...this.props} />

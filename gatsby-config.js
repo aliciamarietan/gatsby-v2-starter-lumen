@@ -23,9 +23,9 @@ module.exports = {
     author: {
       name: 'Alicia Marie Tan',
       email: 'aliciamarietan@gmail.com',
-      twitter: '#aliciabeige',
-      instagram: '#aliciabeige',
-      linkedin: '#aliciamarietan',
+      twitter: 'aliciabeige',
+      instagram: 'aliciabeige',
+      linkedin: 'aliciamarietan',
     },
   },
   plugins: [
@@ -98,7 +98,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 960,
+              maxWidth: 400,
+              linkImagesToOriginal: false,
             },
           },
           {
