@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar'
 class IndexRoute extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const { frontmatter, html } = this.props.data.markdownRemark
+    const { html } = this.props.data.markdownRemark
 
     return (
       <Layout>
@@ -20,7 +20,6 @@ class IndexRoute extends React.Component {
           <div className="content">
             <div className="content__inner">
               <div className="page">
-                <h1 className="page__title">{frontmatter.title}</h1>
                 <div
                   className="page__body"
                   /* eslint-disable-next-line react/no-danger */
