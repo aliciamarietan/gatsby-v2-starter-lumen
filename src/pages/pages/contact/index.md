@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Contact'
 layout: page
 path: '/contact'
 ---
