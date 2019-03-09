@@ -2,30 +2,39 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Writing from '../components/Writing'
 import Sidebar from '../components/Sidebar'
-import CategoryTemplateDetails from '../components/CategoryTemplateDetails'
 
-class CategoryTemplate extends React.Component {
+class WritingRoute extends React.Component {
   render() {
-    const { title } = this.props.data.site.siteMetadata
-    const { category } = this.props.pageContext
+    const items = []
+    const { title, subtitle } = this.props.data.site.siteMetadata
+    const posts = this.props.data.allMarkdownRemark.edges
+    posts.forEach(post => {
+      items.push(<Writing data={post} key={post.node.fields.slug} />)
+    })
 
     return (
       <Layout>
         <div>
-          <Helmet title={`${category} - ${title}`} />
+          <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={subtitle} />
+          </Helmet>
           <Sidebar {...this.props} />
-          <CategoryTemplateDetails {...this.props} />
+          <div className="content">
+            <div className="content__inner">{items}</div>
+          </div>
         </div>
       </Layout>
     )
   }
 }
 
-export default CategoryTemplate
+export default WritingRoute
 
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
+  query WritingRoute {
     site {
       siteMetadata {
         title
@@ -46,16 +55,13 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       filter: {
-        frontmatter: {
-          category: { eq: $category }
-          layout: { eq: "post" }
-          draft: { ne: true }
-        }
+        frontmatter: { layout: { eq: "writing" }, draft: { ne: true } }
       }
-      sort: { order: DESC, fields: [frontmatter___order] }
+      sort: { order: ASC, fields: [frontmatter___order] }
     ) {
       edges {
         node {
+          html
           fields {
             slug
             categorySlug

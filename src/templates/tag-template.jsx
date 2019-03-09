@@ -30,7 +30,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subtitle
-        copyright
         menu {
           label
           path
@@ -38,11 +37,9 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
           twitter
-          github
-          rss
-          vk
+          linkedin
+          instagram
         }
       }
     }
@@ -55,7 +52,7 @@ export const pageQuery = graphql`
           draft: { ne: true }
         }
       }
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___order] }
     ) {
       edges {
         node {
@@ -65,9 +62,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
             category
             description
+            order
           }
         }
       }

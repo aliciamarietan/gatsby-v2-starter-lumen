@@ -14,9 +14,7 @@ class NotFoundRoute extends React.Component {
               <div className="page">
                 <h1 className="page__title">NOT FOUND</h1>
                 <div className="page__body">
-                  <p>
-                    You just hit a route that doesn&#39;t exist... the sadness.
-                  </p>
+                  <p>Nothing to see here.</p>
                 </div>
               </div>
             </div>
@@ -35,7 +33,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subtitle
-        copyright
         menu {
           label
           path
@@ -43,11 +40,9 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
           twitter
-          github
-          rss
-          vk
+          linkedin
+          instagram
         }
       }
     }

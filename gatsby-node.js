@@ -7,7 +7,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('./src/templates/post-template.jsx')
+    const postTemplate = path.resolve('./src/templates/writing-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
     const tagTemplate = path.resolve('./src/templates/tag-template.jsx')
     const categoryTemplate = path.resolve(
@@ -29,6 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
                 tags
                 layout
                 category
+                order
               }
             }
           }
@@ -47,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: slash(pageTemplate),
             context: { slug: edge.node.fields.slug },
           })
-        } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'writing') {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postTemplate),

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import moment from 'moment'
-import Disqus from '../Disqus/Disqus'
 import './style.scss'
 
 class PostTemplateDetails extends React.Component {
@@ -13,7 +11,7 @@ class PostTemplateDetails extends React.Component {
     const homeBlock = (
       <div>
         <Link className="post-single__home-button" to="/">
-          All Articles
+          All Writing
         </Link>
       </div>
     )
@@ -33,15 +31,6 @@ class PostTemplateDetails extends React.Component {
       </div>
     )
 
-    const commentsBlock = (
-      <div>
-        <Disqus
-          postNode={post}
-          siteMetadata={this.props.data.site.siteMetadata}
-        />
-      </div>
-    )
-
     return (
       <div>
         {homeBlock}
@@ -53,11 +42,7 @@ class PostTemplateDetails extends React.Component {
               /* eslint-disable-next-line react/no-danger */
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-            <div className="post-single__date">
-              <em>
-                Published {moment(post.frontmatter.date).format('D MMM YYYY')}
-              </em>
-            </div>
+            <div className="post-single__date" />
           </div>
           <div className="post-single__footer">
             {tagsBlock}
@@ -72,7 +57,6 @@ class PostTemplateDetails extends React.Component {
                 <br /> <strong>{author.name}</strong> on Twitter
               </a>
             </p>
-            {commentsBlock}
           </div>
         </div>
       </div>

@@ -2,17 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Post from '../components/Post'
+import PageTemplateDetails from '../components/PageTemplateDetails'
 import Sidebar from '../components/Sidebar'
 
 class IndexRoute extends React.Component {
   render() {
-    const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
+    const { frontmatter, html } = this.props.data.markdownRemark
 
     return (
       <Layout>
@@ -23,7 +19,16 @@ class IndexRoute extends React.Component {
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
-            <div className="content__inner">{items}</div>
+            <div className="content__inner">
+              <div className="page">
+                <h1 className="page__title">{frontmatter.title}</h1>
+                <div
+                  className="page__body"
+                  /* eslint-disable-next-line react/no-danger */
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
@@ -39,7 +44,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subtitle
-        copyright
         menu {
           label
           path
@@ -47,32 +51,16 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
           twitter
-          github
-          rss
-          vk
+          linkedin
+          instagram
         }
       }
     }
-    allMarkdownRemark(
-      limit: 1000
-      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            categorySlug
-          }
-          frontmatter {
-            title
-            date
-            category
-            description
-          }
-        }
+    markdownRemark(frontmatter: { layout: { eq: "index" } }) {
+      html
+      frontmatter {
+        title
       }
     }
   }

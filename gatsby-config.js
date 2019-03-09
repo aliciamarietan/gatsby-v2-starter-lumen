@@ -4,19 +4,16 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
-    disqusShortname: '',
+    title: 'Alicia Marie Tan Website',
+    subtitle: 'Hi!',
     menu: [
       {
-        label: 'Articles',
+        label: 'About me',
         path: '/',
       },
       {
-        label: 'About me',
-        path: '/about/',
+        label: 'Writing',
+        path: '/writing/',
       },
       {
         label: 'Contact me',
@@ -24,13 +21,11 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      name: 'Alicia Marie Tan',
+      email: 'aliciamarietan@gmail.com',
+      twitter: '#aliciabeige',
+      instagram: '#aliciabeige',
+      linkedin: '#aliciamarietan',
     },
   },
   plugins: [
@@ -71,8 +66,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+                  filter: { frontmatter: { layout: { eq: "writing" }, draft: { ne: true } } }
                 ) {
                   edges {
                     node {
@@ -82,10 +76,10 @@ module.exports = {
                       }
                       frontmatter {
                         title
-                        date
                         layout
                         draft
                         description
+                        order
                       }
                     }
                   }
@@ -120,13 +114,9 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
-    },
-    {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['roboto:400,400i,500,700'],
+        fonts: ['IBM Plex Sans:400,400i,500,700'],
       },
     },
     {

@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PostTemplateDetails from '../components/PostTemplateDetails'
+import Writing from '../components/Writing'
 
 class PostTemplate extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class PostTemplate extends React.Component {
             <title>{`${postTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
-          <PostTemplateDetails {...this.props} />
+          <Writing {...this.props} />
         </div>
       </Layout>
     )
@@ -33,12 +33,13 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subtitle
-        copyright
         author {
           name
+          email
           twitter
+          linkedin
+          instagram
         }
-        disqusShortname
         url
       }
     }
@@ -51,8 +52,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tags
-        date
         description
+        order
       }
     }
   }

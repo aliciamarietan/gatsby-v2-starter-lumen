@@ -33,7 +33,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         subtitle
-        copyright
         menu {
           label
           path
@@ -41,11 +40,9 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
           twitter
-          github
-          rss
-          vk
+          linkedin
+          instagram
         }
       }
     }
@@ -54,7 +51,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
         description
       }
     }
