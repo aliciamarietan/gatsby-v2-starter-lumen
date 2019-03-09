@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     url: 'https://aliciamarietan.me',
     title: 'Alicia Marie Tan Website',
-    subtitle: '🐚',
+    subtitle: '💅🏼',
     menu: [
       {
         label: 'About',
