@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PageTemplateDetails from '../components/PageTemplateDetails'
+import Page from '../components/Page'
 
 class PageTemplate extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class PageTemplate extends React.Component {
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
-          <PageTemplateDetails {...this.props} />
+          <Page {...this.props} />
         </div>
       </Layout>
     )

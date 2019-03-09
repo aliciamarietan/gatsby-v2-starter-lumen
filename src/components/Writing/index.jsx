@@ -3,7 +3,6 @@ import './style.scss'
 
 class Writing extends React.Component {
   render() {
-    console.log(this.props)
     const { title } = this.props.data.node.frontmatter
     const { html } = this.props.data.node
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../Sidebar'
 import './style.scss'
 
-class PageTemplateDetails extends React.Component {
+class Page extends React.Component {
   render() {
     const page = this.props.data.markdownRemark
 
@@ -26,4 +26,4 @@ class PageTemplateDetails extends React.Component {
   }
 }
 
-export default PageTemplateDetails
+export default Page

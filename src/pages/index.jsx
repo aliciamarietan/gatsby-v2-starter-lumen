@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PageTemplateDetails from '../components/PageTemplateDetails'
 import Sidebar from '../components/Sidebar'
 
 class IndexRoute extends React.Component {
