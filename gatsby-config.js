@@ -3,12 +3,12 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://aliciamarietan.me',
     title: 'Alicia Marie Tan Website',
-    subtitle: 'Hi!',
+    subtitle: '🐚',
     menu: [
       {
-        label: 'About me',
+        label: 'About',
         path: '/',
       },
       {
@@ -16,7 +16,7 @@ module.exports = {
         path: '/writing/',
       },
       {
-        label: 'Contact me',
+        label: 'Contact',
         path: '/contact/',
       },
     ],
