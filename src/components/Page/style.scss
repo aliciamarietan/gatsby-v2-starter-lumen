@@ -14,9 +14,5 @@
     font-size: $typographic-base-font-size;
     @include line-height(1);
     @include margin(0, 0, 1);
-    a {
-      display: inline-block;
-      margin: 0.5rem 0rem;
-    }
   }
 }
