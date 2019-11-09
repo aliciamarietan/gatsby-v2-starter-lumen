@@ -12,6 +12,10 @@ module.exports = {
         path: '/',
       },
       {
+        label: 'Projects',
+        path: '/projects/',
+      },
+      {
         label: 'Writing',
         path: '/writing/',
       },
