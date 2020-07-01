@@ -6,6 +6,18 @@ path: '/'
 
 ![Alicia Marie Tan](./about.png)
 
-Alicia Tan is an assistant editor at Harper, an imprint of HarperCollins, a co-founder of the literary magazine <i>Tart</i>, and a writer. Previously, she was an editorial assistant at Abrams, where she worked on narrative nonfiction and illustrated books. Her words have been featured in print and online at Mashable, RadioTimes.com, and more. A born-and-raised Texan, she's currently based in Brooklyn, where she spends her time eating flamin' hot cheetos and watching <i>Terrace House</i>.
+Alicia Tan is an assistant editor at Harper, an imprint of HarperCollins, a founder of the literary magazine <i>Tart</i>, and a writer. Her words have been featured in print and online at Mashable, RadioTimes.com, and more. Previously, she was an editorial assistant at Abrams. A born-and-raised Texan, she’s currently based in Brooklyn.
 
-<b>Are you a literary agent hoping to connect?</b> Alicia is interested in literary fiction and narrative nonfiction that explore the lives of millennial women; rethink gender, sex, love, and power; engage with race, the Asian and Asian American diaspora, and multigenerational trauma; and  analyze media and pop culture consumption. She's especially excited about fiction with rich, complex character studies and narratives that push the envelope on what's dark, gross, and shameful, yet comforting in their honest and edifying depictions of human behavior, as well as nonfiction that elevates marginalized voices.
+Throughout her career, she’s worked on a wide range of narrative nonfiction, literary and commercial fiction, and illustrated books, including Maxwell King’s <i>New York Times</i>–bestselling biography of Fred Rogers, <i>The Good Neighbor</i>; Viet Thanh Nguyen’s anthology on the refugee experience, <i>The Displaced</i>; and a series of guided journals on the creative process by The Creative Independent founder Brandon Stosuy.
+
+Are you an agent who's interested in submitting to her? Here's what she's actively looking for:
+
+— Literary fiction about people from misrepresented communities engaging with themes of art, ambition, power, sex, and gender—especially from women and people of color
+
+— Literary fiction with rich, complex character studies and narratives that push the envelope on what’s dark, gross, and shameful, yet comforting in their honest and edifying depictions of human behavior
+
+— Nonfiction that analyzes media, pop culture, and “low-brow” art in a fresh, nuanced way, especially as it pertains to our behavior, identities, and our world at large
+
+— Nonfiction that engages with race, the Asian and Asian American diaspora, and multigenerational trauma
+
+** She is not interested in: historical fiction, YA, romance, self-help, or thrillers
