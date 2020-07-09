@@ -8,7 +8,7 @@ path: '/'
 
 Alicia Tan is an assistant editor at Harper, an imprint of HarperCollins, a founder of the literary magazine <i>Tart</i>, and a writer. Her words have been featured in print and online at Mashable, RadioTimes.com, and more. Previously, she was an editorial assistant at Abrams. A born-and-raised Texan, she’s currently based in Brooklyn.
 
-Throughout her career, she’s worked on a wide range of narrative nonfiction, literary and commercial fiction, and illustrated books, including Maxwell King’s <i>New York Times</i>–bestselling biography of Fred Rogers, <i>The Good Neighbor</i>; Viet Thanh Nguyen’s anthology on the refugee experience, <i>The Displaced</i>; and a series of guided journals on the creative process by The Creative Independent founder Brandon Stosuy.
+Throughout her career, she’s worked on a wide range of narrative nonfiction, literary and commercial fiction, and illustrated books, including Maxwell King’s <i>New York Times</i>–bestselling biography of Fred Rogers, <i>The Good Neighbor</i> and Viet Thanh Nguyen’s anthology on the refugee experience, <i>The Displaced</i>.
 
 Are you an agent who's interested in submitting to her? Here's what she's actively looking for:
 
